@@ -24,7 +24,9 @@ public class ParsingJSONResponseData {
 								.config(config.logConfig(LogConfig.logConfig().blacklistHeader("Content-Type"))	/*Header Blacklisting, hiding sensitive data*/)
 							.when()
 								.get("https://reqres.in/api/users?page=2");
+		
 		response.then().log().all();
+		
 		Integer data = response.jsonPath().get("data[0].id");
 		System.out.println(data);
 		

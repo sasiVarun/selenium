@@ -1,0 +1,10 @@
+.idea/
+.settings/
+.vscode/
+target/
+.project
+.classpath
+/.metadata/
+/bin/
+*.log
+/.apt_generated/

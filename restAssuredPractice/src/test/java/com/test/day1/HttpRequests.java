@@ -13,6 +13,11 @@ import io.restassured.response.Response;
 
 
 /*
+Static import below 3 packages
+	io.restassured.RestAssured.*
+	io.restassured.matcher.RestAssuredMatchers.*
+	org.hamcrest.Matchers.*
+
 given()
 	content type, set cookies, add auth, add param, set headers info etc...
 when()
